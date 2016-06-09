@@ -8,16 +8,21 @@
  <!-- Map and Side Panel -->
     <div class="row content">
         <!-- Google Map -->
-        <div class="col-md-7">
-         	<div class="panel-heading">
-                    <h2 class="panel-title text-center">Where's Matt?</h2>
-            </div>
-         </div>
-				<img src="https://maps.googleapis.com/maps/api/staticmap?center=Dublin,Ireland&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyAed-zLAelcpvUpeHiV804tQAWj3TZfuXc" alt="map" height="600" width="300"></img>
-        
+        <div class="col-sm-7">
+
+        	<div class="panel panel-default">
+
+         		<div class="panel-heading">
+                    	<h2 class="panel-title text-center">Where's Matt?</h2>
+                </div>
+               		<div class="panel-body">
+						<img src="https://maps.googleapis.com/maps/api/staticmap?center=Dublin,Ireland&zoom=12&size=600x600&maptype=roadmap&markers=color:green%7Clabel:M%53.3493099,-6.24970264&key=AIzaSyAed-zLAelcpvUpeHiV804tQAWj3TZfuXc" alt="map" height="600" width="600"></img>
+					</div>
+				</div>
+        	</div>
 
         <!-- Side Panel -->
-        <div class="col-md-5">
+        <div class="col-sm-5">
             <div class="panel panel-default">
                 <!-- Panel Title -->
                 <div class="panel-heading">
@@ -25,6 +30,11 @@
                 </div>
                 <!-- Panel Body -->
                 <div class="panel-body">
+
+                   	<ul class="nav nav-pills pull-right">
+            			<li disabled><a href="">See results</a></li>
+        			</ul>
+
                     <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
                     <form name ="addForm" novalidate>
                         <!-- Text Boxes and Other User Inputs. Note ng-model binds the values to Angular $scope -->
@@ -40,8 +50,4 @@
                 </div>
             </div>
         </div>
-
-
-
-
-</div>
+	</div>

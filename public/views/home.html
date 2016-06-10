@@ -1,3 +1,4 @@
+
 <div class="jumbotron text-center">
 	<h2>“If you are not embarrassed by the first version of your product, you’ve launched too late.”
 – Reid Hoffman, LinkedIn</h2>
@@ -32,7 +33,7 @@
                 <div class="panel-body">
 
                    	<ul class="nav nav-pills pull-right">
-            			<li disabled><a href="">See results</a></li>
+            			<!-- <li disabled><a href="">See results</a></li> -->
         			</ul>
 
                     <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
@@ -45,7 +46,7 @@
                         </div>
 
                         <!-- Submit button. Note that its tied to createUser() function from addCtrl. Also note ng-disabled logic which prevents early submits.  -->
-                        <button type="submit" class="btn btn-danger btn-block" ng-disabled="addForm.$invalid">Submit</button>
+                        <button type="submit" class="btn btn-danger btn-block" ng-click="createUser()" ng-disabled="addForm.$invalid">Submit</button>
                     </form>
                 </div>
             </div>

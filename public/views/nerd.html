@@ -1,5 +1,258 @@
-<div class="jumbotron text-center">
-	<h1>Nerds and Proud</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-	<p>{{ tagline }}</p>
-</div>
+    <title>CV</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="..\css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="..\css/main.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="..\css/font-awesome.min.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="..\js/jquery.min.js"></script>
+    <script type="text/javascript" src="..\js/smoothscroll.js"></script> 
+    <script src="..\js/Chart.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+	
+
+	<section id="resume" name="resume"></section>
+	<!--EDUCATION DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EDUCATION</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>BA (Hons) Business Studies</t><br/>
+						Griffith College Dublin <br/>
+						<i>1st Class Honours</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>GRADUATED June 2015</sm><br/>
+					</p>
+				</div>
+
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+	
+	
+	<!--WORK DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>WORK</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Business Development Representative</t><br/>
+						Twilio <br/>
+					</p>
+					<p><more>Twilio empowers developers, ISV's, System Integrators and Enterprises of all sizes to build communications across any applications.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>June 2015 - CURRENT</sm></p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Operations Manager</t><br/>
+						Usher <br/>
+					</p>
+					<p><more>Usher is a Dublin based startup in the Solomo (Social/Local/Mobile) space. It provides a booking application platform, listing curated events in a 48 hour window. </more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2010 - JULY 2012</sm></p>
+				</div>
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+
+
+	<!--AWARDS DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>AWARDS</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>GradIreland Student Challenge 2015</t><br/>
+						Winner <br/>
+					</p>
+					<p><more>The Challenge brought together over 50 of Ireland’s brightest students – who were the top performers in an online assessment specifically set to mirror the qualities employers are looking for – and some of Ireland’s top graduate recruiters like PwC and EY. The employers assessed our managerial capabilities in areas such as leadership, teamwork and creativity.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>2015</sm></p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Gaisce, The Presidents Award</t><br/>
+						Silver
+					</p>
+					<p><more>The President's Award is the most prestigious Award in Ireland for young people aged 15 to 25. Self-directed personal development programme in which participants are supported and mentored by a more experienced person, a volunteer, a President's Award Leader (PAL), to set and achieve a personal challenge over a period of time.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>2010</sm></p>
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+	</div><!--/.container -->
+	
+	
+	<!--SKILLS DESCRIPTION -->
+	<div id="skillswrap">
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>SKILLS</h5>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="MEAN" height="130" width="130"></canvas>
+						<p>Full MEAN Stack</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 70,
+										color:"#1abc9c"
+									},
+									{
+										value : 30,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="Agile" height="130" width="130"></canvas>
+						<p>Node.js</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="Ruby" height="130" width="130"></canvas>
+						<p>Angular.js</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 65,
+										color:"#1abc9c"
+									},
+									{
+										value : 35,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
+					<div class="col-lg-3 col-lg-offset-3 centered">
+						<canvas id="html" height="130" width="130"></canvas>
+						<p>HTML/CSS</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="REST" height="130" width="130"></canvas>
+						<p>REST</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 70,
+										color:"#1abc9c"
+									},
+									{
+										value : 30,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="Jira" height="130" width="130"></canvas>
+						<p>Illustrator</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 50,
+										color:"#1abc9c"
+									},
+									{
+										value : 50,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
+			</div><!--/.row -->
+			<br>
+		</div><!--/.container -->
+	</div><!--/ #skillswrap -->
+
+
+			
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/ #footer -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>

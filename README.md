@@ -1,20 +1,39 @@
-# MEAN Stack Single Page Application Starter
+# Matt’s website built in MEAN
 
-This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application. 
+app
+—- models
+——- model.js
+——- Nerd.js
+-routes.js
 
-## Installation
-1. Download the repository
-2. Install npm modules: `npm install`
-3. Install bower dependencies `bower install`
-4. Start up the server: `node server.js`
-5. View in browser at http://localhost:8080
+config
+-db.js
 
-Use this starter kit to build any MEAN stack application you like.
+node modules
 
-If you have any questions or requests, email us at [chris@scotch.io](mailto:chris@scotch.io) and we'll keep updating this to make it perfect.
+public
+—-css
+—-font
+—-fonts
+—-img
 
-## Future Additions
-- CRUD examples
-- Development and Production Environments
-- Link examples
-- Single Page AngularJS Animations
+—-js
+——- app.js
+——- appDirectives.js
+——- appRoutes.js
+——- blog.js
+——- bootstrap.js
+——- chart.js
+——- smoothscroll.js
+——- query.min.js
+———- Controllers
+————- geekCtrl.js
+————- MainCtrl.js
+————- NerdCtrl.js
+———- Services
+
+—-libs
+—-views
+———— geek.html
+———— home.html
+———— nerd.html
